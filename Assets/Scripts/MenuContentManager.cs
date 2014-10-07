@@ -2,11 +2,10 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class InventoryContentManager : MonoBehaviour {
+public class MenuContentManager : MonoBehaviour {
 	List<Transform> children;
 
 	void Awake () {
-
 		children = new List<Transform>();
 		foreach (Transform child in transform) {
 			children.Add(child);

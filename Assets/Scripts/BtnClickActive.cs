@@ -18,12 +18,8 @@ public class BtnClickActive : MonoBehaviour {
 
 		colorDefault = buttons[0].image.color;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	}
 
-	void SetActive (Button btn) {
+	public virtual void SetActive (Button btn) {
 		for (int i = 0, l = buttons.Length; i < l; i++) {
 			buttons[i].image.color = colorDefault;
 		}
