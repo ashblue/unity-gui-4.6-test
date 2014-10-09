@@ -12,9 +12,14 @@ public class MenuContentManager : MonoBehaviour {
 		}
 	}
 
+	public void Show (int index) {
+		HideAll();
+		children[index].gameObject.SetActive(true);
+	}
+
 	public void HideAll () {
-		foreach (Transform trans in children) {
-			trans.gameObject.SetActive(false);
+		for (int i = 0, l = children.Count; i < l; i++) {
+			children[i].gameObject.SetActive(false);
 		}
 	}
 }
